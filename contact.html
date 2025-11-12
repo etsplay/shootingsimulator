@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Home — Static site template with light/dark/auto theme" />
+  <title>SS Contact</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/theme.js"></script>
+  <script defer src="./assets/js/menu.js"></script>
+  <script defer src="./assets/js/blueprint-bg-enhanced.js"></script>
+</head>
+<body class="theme-root">
+  <canvas id="blueprintCanvas"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">Shooting Simulator</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./apps.html">Apps</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="theme-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <select id="theme-select" aria-label="Theme select">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h1>Contact</h1>
+
+    <section class="feature-cards">
+      <section class="feature-cards-flex">
+        <figure class="foto-mini">
+          <a href="https://www.linkedin.com/in/evgeny-tsitsorin-9547771b6/">
+            <img src="./assets/img/ets.png" alt="">
+            <figcaption>Evgeny Tsitsorin</figcaption>
+          </a>
+        </figure>
+      </section>
+
+      <section class="feature-cards-flex">  
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Shooting training simulator project</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
