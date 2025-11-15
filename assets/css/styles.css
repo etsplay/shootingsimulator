@@ -271,11 +271,13 @@ canvas#blueprintCanvas {
   height: 100%;
 }
 
+iframe,
 .container img,
 .container video {
   display: block;
   margin: 0 auto;
   width: 100%;
+  height: 100%;
   background-color: rgba(var(--surface), 1);
   box-shadow: var(--card-shadow);
   padding: 0;
@@ -291,4 +293,5 @@ figure {
   margin: 0;
   padding: 0;
 }
+
 
