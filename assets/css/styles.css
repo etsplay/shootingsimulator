@@ -261,7 +261,6 @@ canvas#blueprintCanvas {
   }
 }
 
-iframe,
 .container img,
 .container video {
   display: block;
@@ -282,3 +281,4 @@ figure {
   margin: 0;
   padding: 0;
 }
+
