@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Home — Static site template with light/dark/auto theme" />
+  <title>SS Apps</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/theme.js"></script>
+  <script defer src="./assets/js/menu.js"></script>
+  <script defer src="./assets/js/blueprint-bg-enhanced.js"></script>
+</head>
+<body class="theme-root">
+  <canvas id="blueprintCanvas"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">Shooting Simulator</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./apps.html"><b>Apps</b></a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="theme-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <select id="theme-select" aria-label="Theme select">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h1>Apps</h1>
+
+    <section class="feature-cards">
+      <div class="card">
+        <h3>Olympic Shooting Simulator</h3>
+        <p></p>
+        <p>Barrel vibration sensor. Hold the rifle so the reading is green or yellow.</p>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/vhWS9vLddmY?si=2081epwXeR0Z3Z8l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    <div class="card">
+        <h3>Biathlon Shooting Simulator</h3>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/-7nZiRdmUYk?si=Cc4dkXPkc3l3nMbK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p></p>
+      <p>Hit or miss handler:</p>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/XxTjbdxjU9k?si=sWMsZexc9rTfDsa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p>Assessing a hit: if more than 80% of the bullet is inside the target.</p>
+      <p>* The video was recorded on a PC and does not show the gyroscope in operation.</p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Shooting training simulator project</p>
+      <p>Privacy Policy</p>
+      <p>Terms &amp; Conditions</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
