@@ -1,34 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <script type="text/javascript">
-      (function(){
-        if (typeof(window.orientation) !== 'undefined')
-        {
-          function getDeviceWidth()
-          {
-            var deviceWidth = window.orientation == 0 ? window.screen.width : window.screen.height;
-            if (navigator.userAgent.indexOf('Android') >= 0 && window.devicePixelRatio)
-              deviceWidth = deviceWidth / window.devicePixelRatio;
-
-            return deviceWidth;
-          }
-
-          var deviceWidth = getDeviceWidth();
-          var maxWidth = 900;
-          
-          if (deviceWidth < maxWidth)
-          {
-            if (window.orientation == 0 || window.orientation == 180)
-              document.write('<meta name="viewport" content="width=device-width">');
-            else
-              document.write('<meta name="viewport" content="width=device-height">');
-          }
-          else
-            document.write('<meta name="viewport" content="width=' + maxWidth + '">');
-        }
-      })();
-    </script>
+  <script>
+  $(function() {
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta) {
+        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+        document.body.addEventListener('gesturestart', function () {
+          viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+        }, false);
+      }
+    }
+  })
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="Home — Static site template with light/dark/auto theme" />
@@ -147,4 +132,5 @@
 </body>
 
 </html>
+
 
