@@ -1,21 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <script>
-  $(function() {
-    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
-      var viewportmeta = document.querySelector('meta[name="viewport"]');
-      if (viewportmeta) {
-        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
-        document.body.addEventListener('gesturestart', function () {
-          viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
-        }, false);
-      }
-    }
-  })
-</script>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Home — Static site template with light/dark/auto theme" />
   <title>SS Home</title>
 
@@ -132,5 +119,6 @@
 </body>
 
 </html>
+
 
 
