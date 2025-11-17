@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for an app that does not collect, store, or process any personal data (GDPR & US compliant)." />
+
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Shooting Simulator" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/theme.js"></script>
+  <script defer src="./assets/js/menu.js"></script>
+  <script defer src="./assets/js/blueprint-bg-enhanced.js"></script>
+</head>
+<body class="theme-root">
+  <canvas id="blueprintCanvas"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html"><h3>Shooting Simulator</h3></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./apps.html">Apps</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="theme-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <select id="theme-select" aria-label="Theme select">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <article>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: <strong>17 November 2025</strong></p>
+      <p>Thank you for using <strong>Olympic SS</strong> or <strong>Biathlon SS</strong> (the “App”). This Privacy Policy explains how the App handles information. In short: <strong>the App does not collect, store, transmit, or process any personal data.</strong></p>
+    </header>
+
+    <section>
+      <h2>1. No Personal Data Collected</h2>
+      <p>The App is designed to operate fully on your device and does not collect, record, or transmit any personal data or device identifiers to us or any third parties. Specifically, the App does not collect any of the following:</p>
+      <ul>
+        <li>Names, email addresses, phone numbers, or other contact details</li>
+        <li>Location data</li>
+        <li>IP addresses or device identifiers</li>
+        <li>Biometric data</li>
+        <li>Usage analytics, behavior tracking, or profiling</li>
+        <li>Cookies or third-party tracking technologies</li>
+        <li>Financial or payment information</li>
+        <li>Files or media from your device</li>
+      </ul>
+      <p>All functionality runs locally on your device. Because we do not collect personal data, we do not create user profiles or share information with advertisers or analytics providers.</p>
+    </section>
+
+    <section>
+      <h2>2. No Third-Party Data Sharing</h2>
+      <p>Because no personal or device-level data is collected, the App does not sell, rent, or otherwise transfer personal data to third parties or service providers. We do not use third-party analytics, advertising SDKs, or tracking libraries that transmit user data off the device.</p>
+    </section>
+
+    <section>
+      <h2>3. GDPR & EU Data Protection</h2>
+      <p>Under the EU General Data Protection Regulation (GDPR), “personal data” is any information that can identify an individual. The App does not collect or process personal data. As a result:</p>
+      <ul>
+        <li>There is no personal data processing activity requiring a legal basis under GDPR.</li>
+        <li>User rights under GDPR (access, rectification, erasure, restriction, portability, objection) do not apply because we do not hold or process personal data.</li>
+        <li>No Data Protection Officer (DPO) is required for the App.</li>
+        <li>If the App’s features change in the future to collect personal data, we will update this policy and implement GDPR-compliant practices (including obtaining lawful bases and honoring data subject rights).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. U.S. Privacy & COPPA</h2>
+      <p>In the United States, the App is designed to avoid collecting personal information. The App does not knowingly collect information from children under 13. As no personal information is collected or stored, the App complies with the Children’s Online Privacy Protection Act (COPPA).</p>
+      <p>If you believe your child provided personal information in error, please contact us (see Contact section) and we will respond promptly.</p>
+    </section>
+
+    <section>
+      <h2>5. Security</h2>
+      <p>Because we do not collect or retain personal information, there is no personal data to secure. All operations occur locally on your device and are subject to the device’s security and permissions model.</p>
+    </section>
+
+    <section>
+      <h2>6. Changes to This Policy</h2>
+      <p>If we ever add features that require collecting personal data, we will update this Privacy Policy, implement appropriate technical and organizational measures, and provide notice to users as required by applicable law.</p>
+    </section>
+
+    <section>
+      <h2>7. Contact</h2>
+      <p>If you have questions about this Privacy Policy or our practices, please contact us:</p>
+      <div>
+        <p><strong>Developer:</strong> Evgeny Tsitsorin</p>
+        <p><strong>Email:</strong> <a href="mailto:ets.playmarket@gmail.com">ets.playmarket@gmail.com</a></p>
+        <p><strong>Website:</strong> <a href="https://etsplay.github.io/shootingsimulator/index.html" target="_blank" rel="noopener noreferrer">https://etsplay.github.io/shootingsimulator/index.html</a></p>
+      </div>
+    </section>
+
+    <section class="muted">
+      <hr>
+      <p><small>This Privacy Policy is provided for informational purposes and is not legal advice. If you have specific legal questions or operate in highly regulated sectors, consult a qualified attorney.</small></p>
+    <section>
+  </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Shooting training simulator project</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
