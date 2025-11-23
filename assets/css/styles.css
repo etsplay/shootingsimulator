@@ -50,6 +50,13 @@ p {
   margin: 0.5rem;
 }
 
+a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 canvas#blueprintCanvas {
   position: fixed;
   inset: 0;
@@ -309,5 +316,6 @@ figure {
   width: 100%;
   height: 100%;
 }
+
 
 
