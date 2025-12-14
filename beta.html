@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home — Static site template with light/dark/auto theme" />
+  <title>SS Beta</title>
+
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Shooting Simulator" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/theme.js"></script>
+  <script defer src="./assets/js/menu.js"></script>
+  <script defer src="./assets/js/blueprint-bg-enhanced.js"></script>
+</head>
+<body class="theme-root">
+  <canvas id="blueprintCanvas"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html"><h3>Shooting Simulator</h3></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./apps.html">Apps</a>
+        <a href="./beta.html"><b>Beta*</b></a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="theme-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <select id="theme-select" aria-label="Theme select">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h1>Beta testing program</h1>
+
+    <section class="feature-cards">
+
+      <div class="card">
+        <h2>Step 1.  You need:</h2>
+        <li>An <strong>Android 8</strong> or higher smartphone with a <strong>gyroscope</strong>.</li>
+        <li>A Google account.</li>
+        <li>Join the Google group: <a href="https://groups.google.com/d/forum/shooting-simulator"><strong>shooting-simulator@googlegroups.com</strong></a></li>
+      </div>
+      <div class="card">
+        <h2>Step 2.  The following apps are now available:</h2>
+        <section class="feature-cards-flex">
+          <figure class="foto-mini">
+            <a href="https://play.google.com/apps/testing/com.ETs.OlympicSS">
+              <img src="./assets/img/oss1.png" alt="">
+            </a>
+            <figcaption><strong>Olympic SS</strong></figcaption>
+          </figure>
+  
+          <figure class="foto-mini">
+            <a href="https://play.google.com/store/apps/details?id=com.ETs.OlympicSS">
+              <img src="./assets/img/qrOSSCloTest.png" alt="">
+            </a>
+            <figcaption><strong>Olympic SS</strong></figcaption>
+          </figure> 
+        </section>
+
+        <section class="feature-cards-flex">
+          <figure class="foto-mini">
+            <a href="https://play.google.com/apps/testing/com.ETs.BiathlonSS">
+              <img src="./assets/img/bss1.jpg" alt="">
+            </a>
+            <figcaption><strong>Biathlon SS</strong></figcaption>
+          </figure>
+  
+          <figure class="foto-mini">
+            <a href="https://play.google.com/store/apps/details?id=com.ETs.BiathlonSS">
+              <img src="./assets/img/qrBSSCloTest.png" alt="">
+            </a>
+            <figcaption><strong>Biathlon SS</strong></figcaption>
+          </figure> 
+        </section>
+      </div>
+
+      <div class="card">
+        <h2>Step 3.  You need: <a href="./index.html"><strong>Rifle-gamepad</strong></a></h2>
+        <li>It is produced to order (Novi Sad, Serbia).</li>
+        <li>The price rifle-gamepad for the testing program is <strong>8 000 din (without a smartphone and power bank).</strong></li>
+        <li>Buy a power bank.</li>
+        <h2>Now you are ready!</h2>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Shooting training simulator project</p>
+      <p><a href="./privacy.html">Privacy Policy</a></p>
+      <p>Terms &amp; Conditions</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
+
