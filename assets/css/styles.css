@@ -54,7 +54,9 @@ p {
 }
 
 a {
-  display: inline;
+  display: inline-block;
+  max-width: 100%;
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -76,8 +78,8 @@ canvas#blueprintCanvas {
 }
 
 .container {
-  max-width: 1200px; /* or 1400px for ultra-wide */
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem 2rem;
   justify-items: center;
 }
@@ -326,3 +328,4 @@ figure {
   width: 100%;
   height: 100%;
 }
+
