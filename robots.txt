@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://etsplay.github.io/shootingsimulator/sitemap.xml

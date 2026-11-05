@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Simulator — Rifle-Gamepad Air Rifle Training Simulator</title>
+  <meta name="description" content="Rifle-gamepad: a portable 3D-printed air rifle controller with ergonomic adjustment for Android shooting simulators. Train aiming and trigger control safely." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Evgeny Tsitsorin" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+  <link rel="canonical" href="https://etsplay.github.io/shootingsimulator/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Shooting Simulator" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Shooting Simulator — Rifle-Gamepad Training Simulator" />
+  <meta property="og:description" content="Rifle-gamepad: a portable 3D-printed air rifle controller with ergonomic adjustment for Android shooting simulators. Train aiming and trigger control safely." />
+  <meta property="og:url" content="https://etsplay.github.io/shootingsimulator/" />
+  <meta property="og:image" content="https://etsplay.github.io/shootingsimulator/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Rifle-gamepad: 3D-printed air rifle controller with a smartphone for the Shooting Simulator" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shooting Simulator — Rifle-Gamepad Training Simulator" />
+  <meta name="twitter:description" content="Rifle-gamepad: a portable 3D-printed air rifle controller with ergonomic adjustment for Android shooting simulators. Train aiming and trigger control safely." />
+  <meta name="twitter:image" content="https://etsplay.github.io/shootingsimulator/og-image.png" />
+
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Shooting Simulator" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/theme.js"></script>
+  <script defer src="./assets/js/menu.js"></script>
+  <script defer src="./assets/js/blueprint-bg-enhanced.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://etsplay.github.io/shootingsimulator/#website",
+      "url": "https://etsplay.github.io/shootingsimulator/",
+      "name": "Shooting Simulator",
+      "description": "Rifle-gamepad: a portable 3D-printed air rifle controller with ergonomic adjustment for Android shooting simulators. Train aiming and trigger control safely.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://etsplay.github.io/shootingsimulator/#author"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://etsplay.github.io/shootingsimulator/#author",
+      "name": "Evgeny Tsitsorin",
+      "url": "https://etsplay.github.io/shootingsimulator/contact.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/evgeny-tsitsorin-9547771b6/",
+        "https://github.com/etsplay"
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://etsplay.github.io/shootingsimulator/#rifle-gamepad",
+      "name": "Rifle-gamepad",
+      "description": "Bluetooth rifle-shaped gamepad with adjustable stock, cheek piece, grip, trigger and sight for Olympic and Biathlon shooting simulator apps.",
+      "image": [
+        "https://etsplay.github.io/shootingsimulator/assets/img/rifle1.png",
+        "https://etsplay.github.io/shootingsimulator/assets/img/rifle3.png"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "Shooting Simulator"
+      },
+      "material": "Structural aluminum profile, 3D-printed PETG",
+      "manufacturer": {
+        "@id": "https://etsplay.github.io/shootingsimulator/#author"
+      },
+      "url": "https://etsplay.github.io/shootingsimulator/"
+    }
+  ]
+}
+  </script>
+</head>
+<body class="theme-root">
+  <canvas id="blueprintCanvas"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">Shooting Simulator</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav-menu">
+        <a href="./index.html"><b>Home</b></a>
+        <a href="./apps.html">Apps</a>
+        <a href="./beta.html">Beta*</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="theme-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <select id="theme-select" aria-label="Theme select">
+          <option value="auto">Auto</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h1>Rifle-gamepad: shooting training simulator</h1>
+    <p class="lead">Rifle-gamepad is a portable, 3D-printed air rifle controller that works with the Olympic and Biathlon shooting simulator apps for Android. Practice aiming, trigger control and shooting posture at home, at school or in a gym — no ammunition, no range. <a href="./apps.html">See the apps</a> or <a href="./beta.html">join the beta program</a>.</p>
+
+    <section class="feature-cards">
+
+      <div class="img">
+        <img src="./assets/img/rifle1.png" alt="Rifle-gamepad shooting simulator controller with a smartphone mounted on the barrel, side view" width="1062" height="368" decoding="async">
+      </div>
+      <div class="card">
+        <h2>Purpose of the Simulator</h2>
+        <p>Virtual shooting simulator provides a realistic training environment tailored to the physical and technical demands of competition.</p>
+        <p>The simulator allows you to acquire:</p>
+<ul>
+        <li>Skills in using an air and small-bore rifle.</li>
+        <li>Understanding the importance of ergonomic settings during long-term shooting under stress.</li>
+        <li>Getting used to the sensitivity of the trigger.</li>
+        <li>Training muscle memory when searching for a balance of muscle tension.</li>
+</ul>
+      </div>
+
+      <div class="img">
+      <img src="./assets/img/rifle2.png" alt="Rifle-gamepad with adjustable stock and cheek piece, smartphone on a bracket at the muzzle" width="1249" height="421" loading="lazy" decoding="async">
+    </div>
+
+      <article class="card">
+        <h2>Realistic Air Rifle Simulation</h2>
+        <p>The simulator is based on an air rifle model designed to simulate the use of professional, competition-level rifles. The digital interface accurately tracks aiming and movement, providing instant feedback without the need for live ammunition or shooting ranges.</p>
+      </article>
+
+      <div class="img">
+      <img src="./assets/img/rifle3.png" alt="Rifle-gamepad running the Olympic shooting simulator app on a smartphone, with a power bank in the stock" width="1073" height="366" loading="lazy" decoding="async">
+    </div>
+
+      <article class="card">
+        <h2>Ergonomic Customization</h2>
+        <p>The simulator allows you to physically adjust the layout of the rifle elements and the grip point to the user's body dimensions. This ensures proper shooting posture and builds essential muscle memory.</p>
+        <p>Athletes can calibrate:</p>
+<ul>
+        <li>Stock length.</li>
+        <li>Cheek height and angle of inclination.</li>
+        <li>Grip width.</li>
+        <li>Trigger position.</li>
+        <li>Sight height.</li>
+</ul>
+      </article>
+
+      <div class="img">
+      <img src="./assets/img/rifle4.png" alt="Rifle-gamepad rear three-quarter view showing the pistol grip, trigger and diopter sight" width="1109" height="489" loading="lazy" decoding="async">
+    </div>
+
+      <article class="card">
+        <h2>Portable and Safe</h2>
+        <p>Unlike traditional shooting setups, this simulator is completely portable and safe for indoor use, even in schools or gyms. No need for lead bullets, rests or ear protection. Ideal for athletes with disabilities.</p>
+      </article>
+
+      <div class="img">
+      <img src="./assets/img/rifle5.png" alt="Rifle-gamepad aluminum profile frame with 3D-printed PETG parts and Bluetooth power bank" width="1208" height="542" loading="lazy" decoding="async">
+    </div>
+
+      <article class="card">
+        <h2>Rifle-gamepad:</h2>
+<ul>
+        <li>Base: structural aluminum profile.</li>
+        <li>Plastic parts: 3D (FDM) printing, PETG.</li>
+        <li>Connection: Bluetooth (gamepad).</li>
+        <li>Power: Power bank.</li>
+</ul>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Shooting training simulator project</p>
+      <p><a href="./privacy.html">Privacy Policy</a></p>
+      <p>Terms &amp; Conditions</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
