@@ -44,48 +44,6 @@ The apps are available through the Google Play beta program:
 3. Install Olympic SS and/or Biathlon SS from the beta links on the [Beta page](https://etsplay.github.io/shootingsimulator/beta.html).
 4. Get a Rifle-gamepad. It is made to order in Novi Sad, Serbia; the price for the testing program is 8 000 RSD (without a smartphone and power bank).
 
-## Repository structure
-
-```
-.
-├── index.html          # Home: the simulator and the Rifle-gamepad
-├── apps.html           # Olympic SS and Biathlon SS with demo videos
-├── beta.html           # Beta testing program
-├── contact.html        # Contact
-├── privacy.html        # Privacy policy of the apps
-├── robots.txt
-├── sitemap.xml
-├── og-image.png        # Social preview image (1200x630)
-├── favicon/            # Icons and web manifest
-└── assets/
-    ├── css/styles.css  # Styles, light/dark/auto theme
-    ├── js/             # Theme switcher, mobile menu, blueprint background
-    └── img/            # Images
-```
-
-The site is plain static HTML, CSS and JavaScript. There is no build step and no dependencies.
-
-## Run locally
-
-```bash
-git clone https://github.com/etsplay/shootingsimulator.git
-cd shootingsimulator
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000.
-
-## Deployment
-
-The site is published with GitHub Pages from the `main` branch. After pushing changes it is available at the live URL above within a minute or two.
-
-## SEO notes
-
-- Every page has its own `title`, `description`, canonical URL, Open Graph and Twitter Card tags.
-- Structured data (JSON-LD): `WebSite`, `Person`, `Product`, `SoftwareApplication`, `ContactPage`, `BreadcrumbList`.
-- `robots.txt` and `sitemap.xml` are in the repository root. When you add a page, add it to `sitemap.xml` too and update `lastmod` when its content changes.
-- Use relative paths for assets: the site lives in the `/shootingsimulator/` subpath on GitHub Pages.
-
 ## Privacy
 
 The apps do not collect, store, transmit or process any personal data. Details: [Privacy Policy](https://etsplay.github.io/shootingsimulator/privacy.html).
